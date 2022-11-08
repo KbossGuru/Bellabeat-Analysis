@@ -54,7 +54,7 @@ SP_RENAME 'Bellabeat.dbo.dailyActivity_merged.new_calories', 'Calories', 'COLUMN
 ALTER TABLE Bellabeat.dbo.dailyActivity_merged ADD ActiveMinutes INT;
 UPDATE Bellabeat.dbo.dailyActivity_merged SET ActiveMiNUTES = VeryACtiveMinutes + FairlyActiveMinutes + LightlyActiveMinutes;
 
---Deleting redundant columnsALTER TABLE Bellabeat.dbo.dailyActivity_merged DROP COLUMN TrackerDistance;
+--Deleting redundant columns
 ALTER TABLE Bellabeat.dbo.dailyActivity_merged DROP COLUMN LoggedActivitiesDistance;
 ALTER TABLE Bellabeat.dbo.dailyActivity_merged DROP COLUMN VeryActiveDistance;
 ALTER TABLE Bellabeat.dbo.dailyActivity_merged DROP COLUMN ModeratelyActiveDistance;
